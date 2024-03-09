@@ -25,14 +25,7 @@ const router = createBrowserRouter([
             throw new Error("Search term must be provided")
           }
           
-          const res = await fetch(
-            `http://registry.npmjs.org/-/v1/search?text=${term}`
-          );
-
-          const data = await res.json();
-
-          
-          return data.objects;
+         
         },
       },
       {
